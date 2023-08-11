@@ -1,0 +1,74 @@
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.main-temp {
+  font-size: 42px;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+ul {
+  text-align: left;
+  padding: 0;
+  display: block;
+}
+li {
+  list-style: none;
+}
+h1 {
+  color: gray;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 25px;
+  margin: 0;
+}
+#description {
+  text-transform: capitalize;
+}
+.units {
+  position: relative;
+  top: -44px;
+}
+.temperature {
+  color: gray;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.cities {
+  color: blue;
+  font-weight: 500;
+}
+.city-1:hover,
+.city-2:hover,
+.city-3:hover,
+.city-4:hover {
+  text-decoration: underline;
+  font-size: 16px;
+  cursor: pointer;
+}
+.info-left {
+  text-align: left;
+  color: gray;
+}
+.info-right {
+  margin-right: 0;
+  text-align: right;
+  color: gray;
+}
+
+.main-img {
+  width: 100px;
+  height: 80px;
+}
+.low-temp {
+  margin-right: 30px;
+  padding-left: 30px;
+}
+.day {
+  text-align: center;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/wireframe.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Wireframe</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Weather Wireframe</h3>
+      <div class="card">
+        <div class="card-body">
+          <!-- <h5 class="card-title">Weather App</h5> -->
+          <div class="cities mt-0">
+            <div class="row">
+              <div class="city-1 col-2">Lisbon</div>
+              <div class="city-2 col-2">Paris</div>
+              <div class="city-3 col-2">Sydney</div>
+              <div class="city-4 col-5">San Francisco</div>
+            </div>
+          </div>
+          <br />
+          <form action="#" id="form">
+            <div class="input-group mb-3">
+              <input
+                id="cityInput"
+                type="text"
+                class="form-control"
+                placeholder="Enter your city"
+                aria-label="Example text with two button addons"
+                aria-describedby="button-addon3"
+              />
+              <div class="input-group-prepend" id="button-addon3">
+                <button class="btn btn-primary mr-3" type="submit">
+                  Search
+                </button>
+                <button class="btn btn-success" id="current" type="button">
+                  Current
+                </button>
+              </div>
+            </div>
+          </form>
+          <h1 id="city">Nairobi</h1>
+          <div class="row">
+            <div class="col-6 info-left">
+              <!-- Nairobi <br />
+            <p id="date">Saturday 10:32</p>
+            Clouds -->
+              <ul>
+                <!-- <li>Nairobi</li> -->
+                <li id="date">Saturday 10:32</li>
+                <li id="description">Partly Cloudy</li>
+              </ul>
+            </div>
+            <div class="col-6 info-right">
+              <!-- Precipitation: 80% <br />
+            Winds: 60km/h -->
+              <ul>
+                <li>Humidity: <span id="humidity">68</span>%</li>
+                <li>Wind: <span id="wind">4</span> km/h</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-2 col-sm-3">
+              <img
+                src="./images/Cloud.jpg"
+                class="main-img"
+                alt=""
+                width="150px"
+              />
+            </div>
+            <div class="col-6 col-sm-3">
+              <span class="temperature" id="temperature">19</span
+              ><span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
+
+            <!-- <div class="col-3">
+              <span class="main-temp">20°C </span>
+              <span class="units">
+                <a href="#" id="celcius-link">°C</a> |
+                <a href="#" id="farenheit-link">F</a>
+              </span>
+            </div> -->
+          </div>
+          <br />
+          <br />
+
+          <div class="row">
+            <div class="col-2 day">
+              Sun
+              <div class="col image">
+                <img src="./images/Cloud.jpg" alt="" />
+                <div class="col temp">23°C</div>
+              </div>
+            </div>
+            <div class="col-2 day">
+              Mon
+              <div class="col image">
+                <img src="./images/sun.jpg" alt="" />
+                <div class="col temp">23°C</div>
+              </div>
+            </div>
+            <div class="col-2 day">
+              Tue
+              <div class="col image">
+                <img src="./images/rain.jpg" alt="" />
+                <div class="col temp">23°C</div>
+              </div>
+            </div>
+            <div class="col-2 day">
+              Wed
+              <div class="col image">
+                <img src="./images/Cloud.jpg" alt="" />
+                <div class="col temp">23°C</div>
+              </div>
+            </div>
+            <div class="col-2 day">
+              Thur
+              <div class="col image">
+                <img src="./images/sun.jpg" alt="" />
+                <div class="col temp">23°C</div>
+              </div>
+            </div>
+            <div class="col-2 day">
+              Fri
+              <div class="col image">
+                <img src="./images/Cloud.jpg" alt="" />
+                <div class="col temp">23°C</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="row low-temp">
+            <div class="col-3 temp"></div>
+            <div class="col-3 temp">24°C</div>
+            <div class="col-3 temp">25°C</div>
+            <div class="col-3 temp">26°C</div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <script src="search.js"></script>
+  </body>
+</html>
